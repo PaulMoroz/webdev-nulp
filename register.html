@@ -8,7 +8,7 @@
 </head>
 <body>
 <header></header>
-<form class="registration-form">
+<form class="form-block">
     <label for="name">Введіть ім'я</label>
     <input type="text" id="name">
     <label for="name">Введіть прізвище</label>
@@ -19,10 +19,18 @@
     <input type="password" id="password">
     <label for="name">Підтвердіть пароль</label>
     <input type="password" id="confirm">
-    <label for="name">Адміністратор</label>
-    <input type="radio" id="radio-admin">
-    <label for="name">Звичайний користувач</label>
-    <input type="radio" id="radio-common">
+    <label for="registration-role-choice">Виберіть роль</label>
+    <div id="registration-role-choice" class="registration-role-choice">
+        <div class="registration-role-item">
+            <label for="name">Адмін</label>
+            <input type="radio" id="radio-admin" name="user-type" value="admin" checked>
+        </div>
+        <div class="registration-role-item">
+            <label for="name">Звичайний</label>
+            <input type="radio" id="radio-common" name="user-type" value="ordinary">
+        </div>
+    </div>
+
     <input type="submit" value="Зареєструватися!" class="action">
 </form>
 </body>

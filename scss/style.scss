@@ -1,7 +1,8 @@
 @use 'base';
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-.login-form{
-
+.form-block{
+  font-family: 'Raleway', sans-serif;
   width: base.$default-form-width;
   margin: 0 auto;
 
@@ -12,10 +13,11 @@
     font-size: base.$default-form-font-size;
     margin: 0;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   input{
+    font-family: 'Raleway', sans-serif;
     display: block;
     width: base.$default-input-width;
     font-size: base.$default-form-font-size;
@@ -23,6 +25,7 @@
     padding: 5px 3px;
     border: base.$input-border;
     border-radius: 5px;
+    font-weight: 400;
   }
 
   .action{
@@ -36,45 +39,39 @@
     height: 40px;
     border: none;
     border-radius: 5px;
+    transition: background 1s;
+    cursor: pointer;
   }
+
+  .action:hover{
+    background: base.$button-hover-color;
+  }
+
 }
 
-.registration-form{
+.registration-role-choice{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: base.$input-border;
+  border-radius: 5px;
+  padding: 10px;
 
-  width: base.$default-form-width;
-  margin: 0 auto;
+}
 
+.registration-role-item{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 40%;
 
   label{
-    display: block;
-    width: base.$default-input-width;
-    font-size: base.$default-form-font-size;
     margin: 0;
-    padding: 0;
-    margin-top: 10px;
+    width: initial;
   }
 
   input{
-    display: block;
-    width: base.$default-input-width;
-    font-size: base.$default-form-font-size;
-    margin: 0;
-    padding: 5px 3px;
-    border: base.$input-border;
-    border-radius: 5px;
-
-  }
-
-  .action{
-    width: 100%;
-    background: base.$button-bg-color;
-    color: base.$button-text-color;
-    font-size: base.$default-form-font-size;
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
+    width: initial;
+    margin-left: 10px;
   }
 }
