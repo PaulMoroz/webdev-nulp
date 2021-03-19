@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <title>Додати/змінити фільм</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<header></header>
-<form>
+<header>
+    <div class="header-film-div">
+        <button class="action">Фільми</button>
+        <button class="action">Розклад</button>
+        <button class="action">Додати фільм</button>
+    </div>
+
+    <div class="header-user-div">
+        <button class="action">Реєстрація</button>
+        <button class="action">Вийти</button>
+    </div>
+</header>
+<form class="form-block">
+    <label for="film-name">Назва</label>
+    <input type="text" id="film-name">
+    <label for="film-genre">Жанр</label>
+    <select id="film-genre">
+        <option value="action" selected>Action</option>
+        <option value="drama">Drama</option>
+        <option value="comedy">Comedy</option>
+    </select>
+    <label for="film-duration">Тривалість</label>
+    <input type="text" id="film-duration" placeholder="Тривалість фільму у вигляді: hh:mm">
+    <label for="film-age-rating">Вікове обмеження</label>
+    <select id="film-age-rating">
+        <option value="action" selected>R(18+)</option>
+        <option value="drama">PG-13(13+)</option>
+        <option value="comedy">G(3+)</option>
+    </select>
+    <label for="film-description">Опис фільму</label>
+    <textarea id="film-description"></textarea>
+    <input type="submit" class="action" value="Додати!">
 </form>
 </body>
 </html>
