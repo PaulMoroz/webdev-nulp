@@ -9,27 +9,35 @@
 <body>
 <header>
     <div class="header-film-div">
-        <button class="action">Фільми</button>
-        <button class="action">Розклад</button>
-        <button class="action">Додати фільм</button>
+        <a href="./index.html">
+            <button class="action">Фільми</button>
+        </a>
+        <a href="./timetable.html">
+            <button class="action">Розклад</button>
+        </a>
+        <a href="./add-film.html">
+            <button class="action">Додати фільм</button>
+        </a>
     </div>
 
     <div class="header-user-div">
-        <button class="action">Реєстрація</button>
+        <a href="./register.html">
+            <button class="action">Реєстрація</button>
+        </a>
         <button class="action">Вийти</button>
     </div>
-</header>і
-<form class="form-block">
+</header>
+<form class="form-block register">
     <label for="name">Введіть ім'я</label>
-    <input type="text" id="name">
+    <input type="text" class="input" id="name">
     <label for="name">Введіть прізвище</label>
-    <input type="text" id="surname">
+    <input type="text" class="input" id="surname">
     <label for="name">Введіть пошту</label>
-    <input type="text" id="email">
+    <input type="text" class="input" id="email">
     <label for="name">Введіть пароль</label>
-    <input type="password" id="password">
+    <input type="password" class="input"  id="password">
     <label for="name">Підтвердіть пароль</label>
-    <input type="password" id="confirm">
+    <input type="password" class="input" id="confirm">
     <label for="registration-role-choice">Виберіть роль</label>
     <div id="registration-role-choice" class="registration-role-choice">
         <div class="registration-role-item">

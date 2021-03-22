@@ -4,20 +4,57 @@
     <title> Афіша </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <header>
     <div class="header-film-div">
-        <button class="action">Фільми</button>
-        <button class="action">Розклад</button>
-        <button class="action">Додати фільм</button>
+        <a href="./index.html">
+            <button class="action">Фільми</button>
+        </a>
+        <a href="./timetable.html">
+            <button class="action">Розклад</button>
+        </a>
+        <a href="./add-film.html">
+            <button class="action">Додати фільм</button>
+        </a>
     </div>
 
     <div class="header-user-div">
-        <button class="action">Реєстрація</button>
+        <a href="./register.html">
+            <button class="action">Реєстрація</button>
+        </a>
         <button class="action">Вийти</button>
     </div>
 </header>
-
+<div>
+    <h1 class="title">Фільми, які вже в прокаті</h1>
+    <input class="search-input input" placeholder="Введіть назву фільму">
+    <div class="film-list">
+        <div class="item">
+            <img src="./avengers-logo.jpg" class="item-photo" alt="film-logo" />
+            <label>Назва</label>
+            <span class="item-name">
+                Месники: фінал
+            </span>
+            <label>Жанр</label>
+            <span class="item-genre">
+                Екшн/триллер
+            </span>
+            <label>Вікове обмеження</label>
+            <span class="item-age-rating">
+                PG-13
+            </span>
+            <label>Короткий опис</label>
+            <div class="item-description">
+                Найкращий фільм Marvel. That's all :)
+            </div>
+            <label>Ціна квитка</label>
+            <span class="item-price">
+                100 грн.
+            </span>
+        </div>
+    </div>
+</div>
 </body>
 </html>

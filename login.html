@@ -9,25 +9,33 @@
 <body>
     <header>
         <div class="header-film-div">
-            <button class="action">Фільми</button>
-            <button class="action">Розклад</button>
-            <button class="action">Додати фільм</button>
+            <a href="./index.html">
+                <button class="action">Фільми</button>
+            </a>
+            <a href="./timetable.html">
+                <button class="action">Розклад</button>
+            </a>
+            <a href="./add-film.html">
+                <button class="action">Додати фільм</button>
+            </a>
         </div>
 
         <div class="header-user-div">
-            <button class="action">Реєстрація</button>
+            <a href="./register.html">
+                <button class="action">Реєстрація</button>
+            </a>
             <button class="action">Вийти</button>
         </div>
     </header>
-    <form class="form-block">
+    <form class="form-block login">
         <label for="email">
             Введіть пошту
         </label>
-        <input type="text" id="email" class="login-text" placeholder="Ваша пошта">
+        <input type="text" id="email" class="login-text input" placeholder="Ваша пошта">
         <label for="password">
             Введіть пароль
         </label>
-        <input type="password" id="password" class="login-text"  placeholder="Пароль">
+        <input type="password" id="password" class="login-text input"  placeholder="Пароль">
         <input type="submit" class="action" value="Увійти!">
     </form>
 </body>
