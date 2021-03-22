@@ -6,6 +6,25 @@ body{
   padding: 0;
 }
 
+.title{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input{
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  font-size: base.$default-form-font-size;
+  margin: 0;
+  padding: 5px 3px;
+  border: base.$input-border;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
 .action{
   font-family: 'Raleway', sans-serif;
   background: base.$button-bg-color;
@@ -30,7 +49,9 @@ body{
 header{
   background: base.$button-bg-color;
   height: 60px;
-
+  a{
+    text-decoration: none;
+  }
   .action{
     padding: 0 20px 0 20px;
     width: 10%;
@@ -43,8 +64,6 @@ header{
     padding: 0;
     height: 100%;
   }
-
-
 }
 
 .header-film-div{
@@ -79,15 +98,7 @@ header{
   }
 
   input{
-    font-family: 'Raleway', sans-serif;
-    display: block;
     width: base.$default-input-width;
-    font-size: base.$default-form-font-size;
-    margin: 0;
-    padding: 5px 3px;
-    border: base.$input-border;
-    border-radius: 5px;
-    font-weight: 400;
   }
 
   select{
@@ -156,4 +167,62 @@ header{
     width: initial;
     margin-left: 10px;
   }
+}
+
+.search-input{
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.film-list{
+  padding: 20px;
+  display: flex;
+}
+
+.item{
+  width: 310px;
+  height: 550px;
+  padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  border: 3px inset base.$form-border-color;
+  border-width: 3px 1px 1px 3px;
+  border-radius: 5px;
+  label{
+    width: 100%;
+    display: block;
+    font-size: 1.1em;
+    margin-top: 10px;
+    font-weight: 700;
+  }
+  .item-photo{
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    height: 200px;
+    width: 95%;
+    margin-top: 5px;
+  }
+  .item-name{
+    width: 100%;
+    display: block;
+  }
+  .item-genre{
+    width: 100%;
+    display: block;
+  }
+  .item-description{
+    width: 100%;
+    display: block;
+    height: 100px;
+  }
+  .item-price {
+    width: 100%;
+    display: block;
+  }
+}
+
+.item:hover{
+  border-width: 4px 1px 1px 4px;
+  transition: 0.5s border;
 }
