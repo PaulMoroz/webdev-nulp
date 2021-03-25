@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title> Афіша </title>
     <meta charset="UTF-8">
-    <title>Афіша</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -27,17 +27,10 @@
         <button class="action">Вийти</button>
     </div>
 </header>
-<h1 class="title">
-    Розклад сеансів
-</h1>
-<div class="timetable-div">
-    <div class="timetable-div-header form-block">
-        <input type="text" id="search-name" class="search-input input" placeholder="Введіть назву фільму">
-        <label for="search-date" class="search-label">Дата пошуку</label>
-        <input id="search-date" class="search-input input" type="date">
-    </div>
-    <div class="timetable-buttons"><button class="timetable-button">Зал 1</button></div>
-    <div class="film-list timetable-list">
+<div>
+    <h1 class="title">Фільми, які вже в прокаті</h1>
+    <input class="search-input input" placeholder="Введіть назву фільму">
+    <div class="film-list">
         <div class="item">
             <img src="./avengers-logo.jpg" class="item-photo" alt="film-logo" />
             <label>Назва</label>
@@ -52,9 +45,9 @@
             <span class="item-age-rating">
                 PG-13
             </span>
-            <label>Час початку і кінця фільму</label>
+            <label>Короткий опис</label>
             <div class="item-description">
-                12:00 - 14:00
+                Найкращий фільм Marvel. That's all :)
             </div>
             <label>Ціна квитка</label>
             <span class="item-price">

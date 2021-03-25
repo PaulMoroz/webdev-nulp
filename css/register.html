@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+    <div class="header-film-div">
+        <a href="./index.html">
+            <button class="action">Фільми</button>
+        </a>
+        <a href="./timetable.html">
+            <button class="action">Розклад</button>
+        </a>
+        <a href="./add-film.html">
+            <button class="action">Додати фільм</button>
+        </a>
+    </div>
+
+    <div class="header-user-div">
+        <a href="./register.html">
+            <button class="action">Реєстрація</button>
+        </a>
+        <button class="action">Вийти</button>
+    </div>
+</header>
+<h1 class="title">Реєстрація</h1>
+<form class="form-block register">
+    <label for="name">Введіть ім'я</label>
+    <input type="text" class="input" id="name">
+    <label for="name">Введіть прізвище</label>
+    <input type="text" class="input" id="surname">
+    <label for="name">Введіть пошту</label>
+    <input type="text" class="input" id="email">
+    <label for="name">Введіть пароль</label>
+    <input type="password" class="input"  id="password">
+    <label for="name">Підтвердіть пароль</label>
+    <input type="password" class="input" id="confirm">
+    <label for="registration-role-choice">Виберіть роль</label>
+    <div id="registration-role-choice" class="registration-role-choice">
+        <div class="registration-role-item">
+            <label for="name">Адмін</label>
+            <input type="radio" id="radio-admin" name="user-type" value="admin" checked>
+        </div>
+        <div class="registration-role-item">
+            <label for="name">Звичайний</label>
+            <input type="radio" id="radio-common" name="user-type" value="ordinary">
+        </div>
+    </div>
+
+    <input type="submit" value="Зареєструватися!" class="action">
+</form>
+</body>
+</html>
