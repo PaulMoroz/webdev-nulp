@@ -21,6 +21,12 @@
     </div>
 
     <div class="header-user-div">
+        <a href="./user-page.html">
+            <button class="action">Користувачі</button>
+        </a>
+        <a href="./user-view.html">
+            <button class="action">Про мене</button>
+        </a>
         <a href="./register.html">
             <button class="action">Реєстрація</button>
         </a>
@@ -29,7 +35,7 @@
 </header>
 <form class="form-block add-film">
     <label for="film-name">Назва</label>
-    <input type="text" id="film-name" class="input">
+    <input type="text" id="film-name" class="input" required>
     <label for="film-genre">Жанр</label>
     <select id="film-genre">
         <option value="action" selected>Action</option>
@@ -37,18 +43,22 @@
         <option value="comedy">Comedy</option>
     </select>
     <label for="film-duration">Тривалість</label>
-    <input type="text" id="film-duration" class="input" placeholder="Тривалість фільму у вигляді: hh:mm">
+    <input type="text" id="film-duration" class="input" required placeholder="Тривалість фільму у вигляді: hh:mm">
     <label for="film-age-rating">Вікове обмеження</label>
     <select id="film-age-rating">
         <option value="action" selected>R(18+)</option>
         <option value="drama">PG-13(13+)</option>
         <option value="comedy">G(3+)</option>
     </select>
-    <label for="short-film-description">Короткий опис фільму</label>
-    <textarea id="short-film-description"></textarea>
+
     <label for="film-description">Опис фільму</label>
     <textarea id="film-description"></textarea>
+    <label for="film-price">Ціна на квиток</label>
+    <input type="text" class="input"  id="film-price" required>
     <input type="submit" class="action" value="Додати!">
+    <button class="action">
+        Покинути сторінку
+    </button>
 </form>
 </body>
 </html>

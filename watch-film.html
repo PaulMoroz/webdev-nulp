@@ -19,7 +19,6 @@
             <button class="action">Додати фільм</button>
         </a>
     </div>
-
     <div class="header-user-div">
         <a href="./register.html">
             <button class="action">Реєстрація</button>
@@ -27,6 +26,93 @@
         <button class="action">Вийти</button>
     </div>
 </header>
-
+<div>
+    <div class="film-information">
+        <div class="film-logo">
+            <img class="image-logo" src="./avengers-logo.jpg" alt="film-logo-image"/>
+        </div>
+        <div class="film-description">
+            <label>Назва</label>
+            <span class="item-name">
+                Месники: фінал
+            </span>
+            <label>Жанр</label>
+            <span class="item-genre">
+                Екшн/триллер
+            </span>
+            <label>Вікове обмеження</label>
+            <span class="item-age-rating">
+                PG-13
+            </span>
+            <label>Час початку і кінця фільму</label>
+            <div class="item-time">
+                12:00 - 14:00
+            </div>
+            <label>Ціна квитка</label>
+            <span class="item-price">
+                100 грн.
+            </span>
+        </div>
+    </div>
+    <div class="film-plot-description">
+        <h2 class="title">Опис сюжету</h2>
+        <div class="film-description-text">
+            Кращий фільм Марвел
+        </div>
+    </div>
+        <div class="film-adding">
+            <h2 class="title">Додавання фільму в розклад</h2>
+            <div class="form-block">
+                <label for="hall-select" >Зал, в який ви додаєте фільм</label>
+                <select id="hall-select">
+                    <option checked>Зал-1</option>
+                </select>
+                <label for="date-start" >Дата початку прокату</label>
+                <input type="date" class="input" id="date-start">
+                <label for="date-end">Дата кінця прокату</label>
+                <input type="date" id="date-end" class="input">
+                <label for="film-periodically-choise">Виберіть періодичність фільму</label>
+                <div id="film-periodically-choise" class="registration-role-choice">
+                    <div class="registration-role-item">
+                        <label>Щодня</label>
+                        <input type="radio" id="radio-every" name="user-type" value="everyday" checked>
+                    </div>
+                    <div class="registration-role-item">
+                        <label>Через день</label>
+                        <input type="radio" id="radio-day-over-day" name="user-type" value="dayoverday">
+                    </div>
+                    <div class="registration-role-item">
+                        <label >Разовий показ</label>
+                        <input type="radio" id="radio-one" name="user-type" value="one">
+                    </div>
+                </div>
+                <input class="action" type="submit" value="Додати">
+        </div>
+        <div class="film-timetable">
+            <h2 class="title">Сеанси фільму</h2>
+            <div class="form-block">
+                    <label for="watch-choice">Виберіть дату перегляду</label>
+                    <input type="date" class="input" id="watch-choice">
+                    <label for="watch-choice">Виберіть зал</label>
+                    <select id="options-choice">
+                        <option selected>Зал 1</option>
+                    </select>
+            </div>
+            <div class="exact-timetable" id="exact-timetable">
+                <div class="timetable-item">
+                    <span class="exact-time">
+                        12:00 - 14:00
+                    </span>
+                    <button class="timetable-item-button action">
+                        Видалити сеанс в цей день
+                    </button>
+                    <button class="timetable-item-button action">
+                        Видалити сеанс в усі дні
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

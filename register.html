@@ -21,23 +21,30 @@
     </div>
 
     <div class="header-user-div">
+        <a href="./user-page.html">
+            <button class="action">Користувачі</button>
+        </a>
+        <a href="./user-view.html">
+            <button class="action">Про мене</button>
+        </a>
         <a href="./register.html">
             <button class="action">Реєстрація</button>
         </a>
         <button class="action">Вийти</button>
     </div>
 </header>
+<h1 class="title">Реєстрація</h1>
 <form class="form-block register">
     <label for="name">Введіть ім'я</label>
-    <input type="text" class="input" id="name">
+    <input type="text" class="input" id="name" required>
     <label for="name">Введіть прізвище</label>
-    <input type="text" class="input" id="surname">
+    <input type="text" class="input" id="surname" required>
     <label for="name">Введіть пошту</label>
-    <input type="text" class="input" id="email">
+    <input type="text" class="input" id="email" required>
     <label for="name">Введіть пароль</label>
-    <input type="password" class="input"  id="password">
+    <input type="password" class="input"  id="password" required>
     <label for="name">Підтвердіть пароль</label>
-    <input type="password" class="input" id="confirm">
+    <input type="password" class="input" id="confirm" required>
     <label for="registration-role-choice">Виберіть роль</label>
     <div id="registration-role-choice" class="registration-role-choice">
         <div class="registration-role-item">
@@ -49,8 +56,10 @@
             <input type="radio" id="radio-common" name="user-type" value="ordinary">
         </div>
     </div>
-
     <input type="submit" value="Зареєструватися!" class="action">
+    <button class="action">
+        Покинути сторінку
+    </button>
 </form>
 </body>
 </html>
