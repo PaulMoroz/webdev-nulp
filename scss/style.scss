@@ -102,7 +102,7 @@ header{
   }
 
   select{
-    width: base.$default-input-width;
+    width: 100%;
     font-size: base.$default-form-font-size;
     margin: 0;
     padding: 5px 3px;
@@ -203,23 +203,17 @@ header{
     width: 95%;
     margin-top: 5px;
   }
-  .item-name{
+  .item-input{
     width: 100%;
     display: block;
   }
-  .item-genre{
-    width: 100%;
-    display: block;
-  }
+
   .item-description{
     width: 100%;
     display: block;
     height: 100px;
   }
-  .item-price {
-    width: 100%;
-    display: block;
-  }
+
 }
 
 .item:hover{
@@ -259,3 +253,48 @@ header{
     outline: none;
   }
 }
+
+.film-information{
+  height: 390px;
+  padding:10px;
+  .film-logo{
+    width: 390px;
+    height: 390px;
+    float: left;
+  }
+  .image-logo{
+    width: 390px;
+    height: 390px;
+    float: left;
+  }
+}
+
+.film-description-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  padding: 0 10px 10px 10px ;
+}
+
+
+.film-description{
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  width: calc(100% - 410px);
+  label{
+    width: 100%;
+    display: block;
+    font-size: 1.1em;
+    margin-top: 10px;
+    font-weight: 700;
+  }
+}
+
+.film-plot-description{
+  width: calc(100% - 20px);
+}
+
+.exact-timetable{
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+}
+

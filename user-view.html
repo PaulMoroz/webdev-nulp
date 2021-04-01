@@ -33,5 +33,42 @@
         <button class="action">Вийти</button>
     </div>
 </header>
+<form class="form-block register">
+    <label for="name">Ім'я</label>
+    <input type="text" class="input" id="name" required>
+    <label for="name">Прізвище</label>
+    <input type="text" class="input" id="surname" required>
+    <label for="name">Пошта</label>
+    <input type="text" class="input" id="old-password" required>
+    <label for="name">Старий пароль(У разі зміни пароля)</label>
+    <input type="text" class="input" id="new-password" required>
+    <label for="name">Новий пароль(у разі зміни паролю)</label>
+    <input type="password" class="input"  id="confirm-new-password" required>
+    <label for="name">Підтвердіть новий пароль(У разі зміни паролю)</label>
+    <input type="password" class="input" id="confirm" required>
+    <label for="registration-role-choice">Роль користувача</label>
+    <div id="registration-role-choice" class="registration-role-choice">
+        <div class="registration-role-item">
+            <label for="name">Адмін</label>
+            <input type="radio" id="radio-admin" name="user-type" value="admin" checked>
+        </div>
+        <div class="registration-role-item">
+            <label for="name">Звичайний</label>
+            <input type="radio" id="radio-common" name="user-type" value="ordinary">
+        </div>
+    </div>
+    <button class="action">
+        Змінити інформацію про користувача
+    </button>
+    <button class="action">
+        Скасувати усі зміни
+    </button>
+    <button class="action">
+        Видалити користувача
+    </button>
+    <button class="action">
+        Покинути сторінку
+    </button>
+</form>
 </body>
 </html>
