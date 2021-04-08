@@ -42,25 +42,50 @@
 </header>
 <h1 class="title">Реєстрація</h1>
 <form class="form-block register">
-    <label for="name">Введіть ім'я</label>
-    <input type="text" class="input" id="name" required>
-    <label for="name">Введіть прізвище</label>
-    <input type="text" class="input" id="surname" required>
-    <label for="email">Введіть пошту</label>
-    <input type="email" class="input" id="email" required>
-    <label for="name">Введіть пароль</label>
-    <input type="password" class="input"  id="password" required>
-    <label for="name">Підтвердіть пароль</label>
-    <input type="password" class="input" id="confirm" required>
+    <label for="register-name">Введіть ім'я</label>
+    <input type="text" class="input" id="register-name" required onchange="checkName()">
+    <div class="error-message">
+        <div id="register-name-message">
+            Invalid name
+        </div>
+    </div>
+    <label for="register-surname">Введіть прізвище</label>
+    <input type="text" class="input" id="register-surname" required onchange="checkSurname()">
+    <div class="error-message">
+        <div id="register-surname-message">
+            Invalid surname
+        </div>
+    </div>
+    <label for="register-email">Введіть пошту</label>
+    <input type="email" class="input" id="register-email" onchange="checkEmail()" required>
+    <div class="error-message">
+        <div id="register-email-message">
+            Неправильна пошта
+        </div>
+    </div>
+    <label for="register-password">Введіть пароль</label>
+    <input type="password" class="input"  id="register-password" required onchange="checkPassword()">
+    <div class="error-message">
+        <div id="register-password-message">
+            Неправильно введений пароль
+        </div>
+    </div>
+    <label for="register-confirm-password">Підтвердіть пароль</label>
+    <input type="password" class="input" id="register-confirm-password" onchange="checkConfirmationPassword()" required>
+    <div class="error-message">
+        <div id="register-confirm-message">
+            Пароль та його підтвердження різні
+        </div>
+    </div>
     <label for="registration-role-choice">Виберіть роль</label>
     <div id="registration-role-choice" class="registration-role-choice">
         <div class="registration-role-item">
-            <label for="name">Адмін</label>
-            <input type="radio" id="radio-admin" name="user-type" value="admin" checked>
+            <label for="register-radio-admin">Адмін</label>
+            <input type="radio" id="register-radio-admin" name="user-type" value="admin" checked>
         </div>
         <div class="registration-role-item">
-            <label for="name">Звичайний</label>
-            <input type="radio" id="radio-common" name="user-type" value="ordinary">
+            <label for="register-radio-common">Звичайний</label>
+            <input type="radio" id="register-radio-common" name="user-type" value="ordinary">
         </div>
     </div>
     <input type="submit" value="Зареєструватися!" class="action">

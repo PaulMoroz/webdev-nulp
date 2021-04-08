@@ -42,6 +42,14 @@ body{
   transition: background 1s;
 }
 
+.error-message{
+  div{
+    display: none;
+    font-size: 8px;
+    color: #ff5555;
+  }
+}
+
 .action:focus{
   outline: none;
 }
@@ -65,6 +73,17 @@ header{
     height: 100%;
   }
 }
+.header-menu-div{
+  display: none;
+}
+.menu-icon{
+  display: none;
+
+  img{
+    height: 100%;
+  }
+}
+
 
 .header-film-div{
   float: left;
@@ -270,6 +289,7 @@ header{
 }
 
 .film-description-text {
+
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   padding: 0 10px 10px 10px ;
@@ -291,10 +311,143 @@ header{
 
 .film-plot-description{
   width: calc(100% - 20px);
+  display: block;
+  margin: 0 auto;
 }
 
-.exact-timetable{
+.timetable-item{
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid #000000;
+  height: 40px;
+  .exact-time{
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+}
+.timetable-item-buttons{
+  float: right;
+  .action{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 7px;
+  }
+}
+
+
+.user-item{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
   font-family: 'Raleway', sans-serif;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 5px;
+  .user-data-block {
+     float: left;
+    display: flex;
+    align-items: center;
+  }
+  .user-button-block{
+      float: right;
+  }
 }
 
+.user-data-block{
+  span{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.user-button-block {
+  button {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  header{
+    .action{
+      font-size: 13px;
+    }
+  }
+}
+@media screen and (max-width: 800px){
+  .header-menu-div{
+    display: block;
+    button{
+      width: 120px;
+    }
+  }
+
+  .header-divs {
+    display: none;
+    position: relative;
+  }
+
+  .menu-icon{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    img{
+      margin: 0 auto;
+    }
+  }
+  .header-film-div{
+    display: block;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    .action{
+      width: 100%;
+      background: black;
+      height: 60px;
+    }
+  }
+
+  .header-user-div{
+    display: block;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 180px;
+    .action{
+      height: 60px;
+      width: 100%;
+      background: black;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .film-information{
+    height: max-content;
+    .film-logo{
+      float: none;
+      margin: 0 auto;
+    }
+    .film-description {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+  .exact-time{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .timetable-item-buttons{
+    float: none;
+    margin: 0 auto;
+    .action{
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+}
