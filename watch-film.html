@@ -8,22 +8,36 @@
 </head>
 <body>
 <header>
-    <div class="header-film-div">
-        <a href="./index.html">
-            <button class="action">Фільми</button>
-        </a>
-        <a href="./timetable.html">
-            <button class="action">Розклад</button>
-        </a>
-        <a href="./add-film.html">
-            <button class="action">Додати фільм</button>
-        </a>
-    </div>
-    <div class="header-user-div">
-        <a href="./register.html">
-            <button class="action">Реєстрація</button>
-        </a>
-        <button class="action">Вийти</button>
+    <div class="header-button-box" onmouseleave="hide();">
+        <div class="header-menu-div">
+            <button class="action menu-icon" onmouseenter="show()"><img src="menuicon.svg"></button>
+        </div>
+        <div class="header-divs" id="header-divs">
+            <div class="header-film-div">
+                <a href="./index.html">
+                    <button class="action">Фільми</button>
+                </a>
+                <a href="./timetable.html">
+                    <button class="action">Розклад</button>
+                </a>
+                <a href="./add-film.html">
+                    <button class="action">Додати фільм</button>
+                </a>
+            </div>
+
+            <div class="header-user-div">
+                <a href="./user-page.html">
+                    <button class="action">Користувачі</button>
+                </a>
+                <a href="./user-view.html">
+                    <button class="action">Про мене</button>
+                </a>
+                <a href="./register.html">
+                    <button class="action">Реєстрація</button>
+                </a>
+                <button class="action">Вийти</button>
+            </div>
+        </div>
     </div>
 </header>
 <div>
@@ -103,16 +117,20 @@
                     <span class="exact-time">
                         12:00 - 14:00
                     </span>
-                    <button class="timetable-item-button action">
-                        Видалити сеанс в цей день
-                    </button>
-                    <button class="timetable-item-button action">
-                        Видалити сеанс в усі дні
-                    </button>
+                    <div class="timetable-item-buttons">
+                        <button class="timetable-item-button action">
+                            Видалити сеанс в цей день
+                        </button>
+                        <button class="timetable-item-button action">
+                            Видалити сеанс в усі дні
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script type="text/javascript" src="index.js"></script>
+
 </body>
 </html>
