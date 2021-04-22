@@ -1,9 +1,9 @@
 function showError(divName){
-    document.getElementById(divName).display = 'block';
+    document.getElementById(divName).style.display = 'block';
 }
 
 function hideError(divName){
-    document.getElementById(divName).display = 'none';
+    document.getElementById(divName).style.display = 'none';
 }
 
 function checkName(){

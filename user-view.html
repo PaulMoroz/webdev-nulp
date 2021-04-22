@@ -41,26 +41,56 @@
     </div>
 </header>
 <form class="form-block register">
-    <label for="name">Ім'я</label>
-    <input type="text" class="input" id="name" required>
-    <label for="name">Прізвище</label>
-    <input type="text" class="input" id="surname" required>
-    <label for="name">Пошта</label>
-    <input type="text" class="input" id="old-password" required>
-    <label for="name">Старий пароль(У разі зміни пароля)</label>
-    <input type="text" class="input" id="new-password" required>
-    <label for="name">Новий пароль(у разі зміни паролю)</label>
-    <input type="password" class="input"  id="confirm-new-password" required>
-    <label for="name">Підтвердіть новий пароль(У разі зміни паролю)</label>
-    <input type="password" class="input" id="confirm" required>
-    <label for="registration-role-choice">Роль користувача</label>
-    <div id="registration-role-choice" class="registration-role-choice">
+    <label for="update-name">Ім'я</label>
+    <input type="text" class="input" id="update-name" oninput="checkName()">
+    <div class="error-message">
+        <div id="update-name-message">
+            Invalid name
+        </div>
+    </div>
+    <label for="update-surname">Прізвище</label>
+    <input type="text" class="input" id="update-surname"  oninput="checkSurname()">
+    <div class="error-message">
+        <div id="update-surname-message">
+            Invalid surname
+        </div>
+    </div>
+    <label for="update-email">Пошта</label>
+    <input type="text" class="input" id="update-email"  oninput="checkEmail()">
+    <div class="error-message">
+        <div id="update-email-message">
+            Invalid surname
+        </div>
+    </div>
+    <label for="old-password">Старий пароль(У разі зміни пароля)</label>
+    <input type="text" class="input" id="old-password">
+    <div class="error-message">
+        <div id="update-old-password-message">
+            You must write old password to confirm password changing
+        </div>
+    </div>
+    <label for="new-password">Новий пароль(у разі зміни паролю)</label>
+    <input type="password" class="input"  id="new-password"  oninput="checkPassword()">
+    <div class="error-message">
+        <div id="update-new-password-message">
+            New password must be longer than eight symbols
+        </div>
+    </div>
+    <label for="confirm-new-password">Підтвердіть новий пароль(У разі зміни паролю)</label>
+    <input type="password" class="input" id="confirm-new-password" >
+    <div class="error-message">
+        <div id="update-confirm-new-password-message">
+            You must write confirmation of new password to confirm password changing
+        </div>
+    </div>
+    <label for="update-role-choice">Роль користувача</label>
+    <div id="update-role-choice" class="registration-role-choice">
         <div class="registration-role-item">
-            <label for="name">Адмін</label>
+            <label for="radio-admin">Адмін</label>
             <input type="radio" id="radio-admin" name="user-type" value="admin" checked>
         </div>
         <div class="registration-role-item">
-            <label for="name">Звичайний</label>
+            <label for="radio-common">Звичайний</label>
             <input type="radio" id="radio-common" name="user-type" value="ordinary">
         </div>
     </div>
@@ -78,6 +108,7 @@
     </button>
 </form>
 <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="update-user-checker.js"></script>
 
 </body>
 </html>

@@ -43,35 +43,35 @@
 <h1 class="title">Реєстрація</h1>
 <form class="form-block register">
     <label for="register-name">Введіть ім'я</label>
-    <input type="text" class="input" id="register-name" required onchange="checkName()">
+    <input type="text" class="input" id="register-name" required oninput="checkName()">
     <div class="error-message">
         <div id="register-name-message">
             Invalid name
         </div>
     </div>
     <label for="register-surname">Введіть прізвище</label>
-    <input type="text" class="input" id="register-surname" required onchange="checkSurname()">
+    <input type="text" class="input" id="register-surname" required oninput="checkSurname()">
     <div class="error-message">
         <div id="register-surname-message">
             Invalid surname
         </div>
     </div>
     <label for="register-email">Введіть пошту</label>
-    <input type="email" class="input" id="register-email" onchange="checkEmail()" required>
+    <input type="email" class="input" id="register-email" oninput="checkEmail()" required>
     <div class="error-message">
         <div id="register-email-message">
             Неправильна пошта
         </div>
     </div>
     <label for="register-password">Введіть пароль</label>
-    <input type="password" class="input"  id="register-password" required onchange="checkPassword()">
+    <input type="password" class="input"  id="register-password" required oninput="checkPassword()">
     <div class="error-message">
         <div id="register-password-message">
             Неправильно введений пароль
         </div>
     </div>
     <label for="register-confirm-password">Підтвердіть пароль</label>
-    <input type="password" class="input" id="register-confirm-password" onchange="checkConfirmationPassword()" required>
+    <input type="password" class="input" id="register-confirm-password" oninput="checkConfirmationPassword()" required>
     <div class="error-message">
         <div id="register-confirm-message">
             Пароль та його підтвердження різні
@@ -94,4 +94,6 @@
     </button>
 </form>
 </body>
+<script src="index.js" type="text/javascript"></script>
+<script src="register-checker.js" type="text/javascript"></script>
 </html>

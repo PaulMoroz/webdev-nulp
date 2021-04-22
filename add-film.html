@@ -42,7 +42,12 @@
 </header>
 <form class="form-block add-film">
     <label for="film-name">Назва</label>
-    <input type="text" id="film-name" class="input" required>
+    <input type="text" id="film-name" class="input" required onchange="checkName()">
+    <div class="error-message">
+        <div id="add-film-name-message">
+            Invalid film name
+        </div>
+    </div>
     <label for="film-genre">Жанр</label>
     <select id="film-genre">
         <option value="action" selected>Action</option>
@@ -50,7 +55,13 @@
         <option value="comedy">Comedy</option>
     </select>
     <label for="film-duration">Тривалість</label>
-    <input type="text" id="film-duration" class="input" required placeholder="Тривалість фільму у вигляді: hh:mm">
+    <input type="text" id="film-duration" class="input" required onchange="checkDuration()" placeholder="Тривалість фільму у вигляді: hh:mm">
+    <div class="error-message">
+        <div id="add-film-film-duration-message">
+            Invalid film duration
+        </div>
+    </div>
+
     <label for="film-age-rating">Вікове обмеження</label>
     <select id="film-age-rating">
         <option value="action" selected>R(18+)</option>
@@ -61,13 +72,18 @@
     <label for="film-description">Опис фільму</label>
     <textarea id="film-description"></textarea>
     <label for="film-price">Ціна на квиток</label>
-    <input type="text" class="input"  id="film-price" required>
+    <input type="text" class="input"  id="film-price" required oninput="checkPrice()">
+    <div class="error-message">
+        <div id="add-film-film-price-message">
+            Invalid film price
+        </div>
+    </div>
     <input type="submit" class="action" value="Додати!">
     <button class="action">
         Покинути сторінку
     </button>
 </form>
 <script type="text/javascript" src="index.js"></script>
-
+<script type="text/javascript" src="add-film-checker.js"></script>
 </body>
 </html>
